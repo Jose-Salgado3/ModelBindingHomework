@@ -1,0 +1,40 @@
+﻿@model Vehicle
+@{
+    ViewData["Title"] = "ApplyMB";
+}
+
+<h1>ApplyMB</h1>
+
+<form method="post">
+
+    <label asp-for="FullName"></label>
+    <input asp-for="FullName" />
+    <span asp-validation-for="FullName">*</span>
+    <br />
+
+    <label asp-for="Make"></label>
+    <input asp-for="Make" />
+    <span asp-validation-for="Make">*</span>
+    <br />
+
+    <label asp-for="Model"></label>
+    <input asp-for="Model" />
+    <span asp-validation-for="Model">*</span>
+    <br />
+
+    <label asp-for="Year"></label>
+    <input asp-for="Year" />
+    <span asp-validation-for="Year">*</span>
+    <br />
+
+    <label asp-for="Miles"></label>
+    <input asp-for="Miles" />
+    <span asp-validation-for="Miles">*</span>
+    <br />
+
+    <input type="submit" value="Apply Now!" />
+
+
+
+</form>
+
