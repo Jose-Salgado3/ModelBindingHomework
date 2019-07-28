@@ -17,6 +17,7 @@ namespace ModelBindingHomework.Models
         /// </summary>
 
         [Required]
+        [Display(Name = "Full Legal Name")]
         public string FullName { get; set; }
         
         /// <summary>

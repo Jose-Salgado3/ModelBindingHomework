@@ -29,6 +29,7 @@ namespace ModelBindingHomework.Controllers
                 Miles = Convert.ToInt32(data["miles"])
             };
 
+
             //ADD TO DATABASE HERE!!!!
             return View();
         }
@@ -46,9 +47,10 @@ namespace ModelBindingHomework.Controllers
         {
             if (ModelState.IsValid)
             {
-                //Add to database
+                // Add to database
                 // Alert successs
-                
+                ViewData["Success"] = "Registration was successful!";
+                return View();
             }
             return View();
         }
