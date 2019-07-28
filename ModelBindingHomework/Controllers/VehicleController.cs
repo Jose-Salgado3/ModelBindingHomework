@@ -48,6 +48,8 @@ namespace ModelBindingHomework.Controllers
             if (ModelState.IsValid)
             {
                 // Add to database
+                
+                VehicleDB.Apply(v);
                 // Alert successs
                 ViewData["Success"] = "Registration was successful!";
                 return View();

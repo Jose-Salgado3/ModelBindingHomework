@@ -24,12 +24,14 @@ namespace ModelBindingHomework.Models
         /// The name of the company that manufactured the vehicle.
         /// </summary>
         [Required]
+        [Display(Name ="Must enter make of vehicle")]
         public string Make { get; set; }
 
         /// <summary>
         /// The model of the vehicle that is to be rented
         /// </summary>
         [Required]
+        [Display(Name ="Must enter model")]
         public string Model { get; set; }
 
 
