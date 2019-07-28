@@ -29,7 +29,8 @@ namespace ModelBindingHomework.Controllers
                 Miles = Convert.ToInt32(data["miles"])
             };
 
-
+            VehicleDB.Apply(v);
+            ViewData["Success"] = "Registration was successful!";
             //ADD TO DATABASE HERE!!!!
             return View();
         }
